@@ -277,5 +277,6 @@ SELECT
     customer_type,
     AVG(tax_pct) AS total_tax
 FROM sales
-GROUP BY customer_type
-ORDER BY total_tax;
+WHERE day_name = "Sunday"
+--GROUP BY customer_type
+--ORDER BY total_tax;
